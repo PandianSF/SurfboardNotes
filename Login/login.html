@@ -26,7 +26,7 @@
      .container2 {
       height:100vh;
       width:50%;
-      background-color: rgb(232,232,223);
+      background-color: rgb(232,232,233);
       color:blue;
       display:flex;
       flex-direction:column;
@@ -44,25 +44,30 @@
      .box1 {
        width:400px;
        background-color:white;
-       color:lightgrey;
-       padding:10px;
-       margin:5px;
+       color: rgb(10,10,10);
+       padding:15px;
+       margin:10px;
        box-sizing:border-box;
        border-style:solid;
        border-color: rgb(26,37,199,.6);
        border-radius:10px;
+       font-size:15px;
        }
       .block {
-        display:block;
         width:30%;
         border:none;
         background-color:blue;
-        text-color;white;
-        padding:10px;
-        font-size:20px;
+        color:white;
+        padding:15px;
+        margin:10px;
+        font-size:15px;
         text-align:center;
         cursor:pointer;
+        font-weight:bold;
         border-radius:10px;
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
        }
    </style>
    </head>
@@ -79,8 +84,8 @@
      <h1>Welcome back!</h1>
       <input class="box1";  placeholder="E-mail"  type="e-mail";>
      <input class="box1";  placeholder="Password" type="password";></div>
-     <button class="block";>signin</button>
-     <button class="block";>signup</button>
+     <button class="block"> Sign in</button>
+     <button class="block"> Sign up</button>
      </div>
      </div>
    </body>
