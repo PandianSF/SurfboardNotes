@@ -34,6 +34,8 @@ color: blue ;
     border-color: blue;
     border-radius:25px;
 }
+
+
 .img1 {
  width: 2%;
  height: 7%;
@@ -70,10 +72,29 @@ body {
 </div>
 </div>
 </div>
-<div class="rectangle"></div>
- <div class="rectangle"></div>
-<div class="rectangle"></div>  
+<div id="rectangle"></div>
+<div class="rectangle">
+<img src="../Images/edit.png" style="margin-left:437px;margin-top:1%;margin-bottom : -500; margin-right:20px;width: 5%; height:24%;" >
+<img src="../Images/Vector(1).png" style="margin-left:472px;margin-top:2%;margin-bottom : -500; margin-right:20px;width: 3%; height:19%;" >
+</div>
+ <div class="rectangle">
+<img src="../Images/edit.png" style="margin-left:437px;margin-top:1%;margin-bottom : -500; margin-right:20px;width: 5%; height:24%;" >
+<img src="../Images/Vector(1).png" style="margin-left:472px;margin-top:2%;margin-bottom : -500; margin-right:20px;width: 3%; height:19%;" >
+</div>
+<div class="rectangle">
+<img src="../Images/edit.png" style="margin-left:437px;margin-top:1%;margin-bottom : -500; margin-right:20px;width: 5%; height:24%;" >
+<img src="../Images/Vector(1).png" style="margin-left:472px;margin-top:2%;margin-bottom : -500; margin-right:20px;width: 3%; height:19%;" >
+</div>  
 
-<img src = "../Images/add1.svg" style="margin-left: 437px; margin-top : 8px; width : 2%;height : 7%;">
+<img src = "../Images/add1.svg" style="margin-left: 432px; margin-top : 8px; width : 2%;height : 7%;">
+<script>
+var array=["notes", "create", "account"];
+
+function Myfunctions(){
+for ( i = 0; i <array.length ; i++)
+console.log(array[i]);
+} 
+document.getElementById("rectangle").innerHTML = array;
+</script>
 </body>
 </html>
