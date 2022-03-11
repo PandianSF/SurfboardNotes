@@ -156,11 +156,11 @@
             tbodyEl.append(
               `<div   class="rectangle">
                 <div style="display:none" class="id">${product.val().id}</div>
-                <input style = " outline :none;  type="text" class="form-control text-area" id=` +
+                <textarea style = " outline :none;resize:none;"  type="text" class="form-control text-area" id=` +
                 product.val().id +
                 " value= " +
                 product.val().name +
-                ` readonly>
+                ` readonly >${product.val().name}</textarea>
                 <button 
             style= "background-color: blue;
             font-weight : bold;
@@ -168,8 +168,8 @@
             border: none;
             border-radius: 8px;
             padding: 11px;
-            margin-left :408;
-            margin-top: -56px;"
+            margin-left :410;
+            margin-top: -78px;"
              class= "btn edit" id=` +
                 "edit" +
                 product.val().id +
@@ -184,7 +184,7 @@
        
           style="
           margin-left: 487px;
-          margin-top: -6%;
+          margin-top: -11%;
           margin-bottom: -499;
           margin-right: 28px;
           width: 4%;
@@ -200,8 +200,9 @@
         //////add todo start ////////////////
         $("#add").click(function () {
           var task = $("#todo").val();
+          task.toString();
           add_todo(task);
-          $("#form")[0].reset();
+          $("#form");
         });
 
         function add_todo(name) {
