@@ -142,11 +142,15 @@
             tbodyEl.append(
               `<div class="rectangle">
                 <div style="display:none" class="id">${product.val().id}</div>
-                <textarea  class="text-area" style='width:85%' id=` +
+                <input type="text" class="form-control text-area" id=` +
                 product.val().id +
-                `value=` +
+                " value= " +
                 product.val().name +
-                ` readonly>${product.val().name}</textarea>               
+                ` readonly>
+                <button class="btn edit" id=` +
+                "edit" +
+                product.val().id +
+                `>Edit</button>              
       <img
         src="../Images/Vector(1).png"
         id="delete"
@@ -206,6 +210,8 @@
         $("#text").on("click", ".update", function () {
           var rowEl = $(this).closest(".rectangle");
           var id = rowEl.find(".id").text();
+          console.log(rowEl);
+          console.log(id);
           var name = $("#" + id).val();
           $("#" + id).attr("readonly", false);
           $("#" + id).attr("readonly", true);

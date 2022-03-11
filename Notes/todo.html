@@ -103,6 +103,8 @@
         $("table").on("click", ".edit", function () {
           var rowEl = $(this).closest("tr");
           var id = rowEl.find(".id").text();
+          console.log(rowEl);
+          console.log(id);
           $("#" + id).attr("readonly", false);
           $("#edit" + id).html("Update");
           $("#edit" + id)
@@ -115,6 +117,7 @@
           var rowEl = $(this).closest("tr");
           var id = rowEl.find(".id").text();
           var name = $("#" + id).val();
+          console.log(name);
           $("#" + id).attr("readonly", false);
           $("#" + id).attr("readonly", true);
           $("#update" + id).html("Edit");
